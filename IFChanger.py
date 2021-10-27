@@ -2,7 +2,8 @@ import subprocess, os, netifaces
 
 INFO = "[i] Creado por __Rodion__. (github.com/RodionButEncapsulated)\n"
 
-LOGO = '''M""M MM""""""""`M MM'""""'YMM dP                                                    
+LOGO = '''
+M""M MM""""""""`M MM'""""'YMM dP                                                    
 M  M MM  mmmmmmmM M' .mmm. `M 88                                                    
 M  M M'      MMMM M  MMMMMooM 88d888b. .d8888b. 88d888b. .d8888b. .d8888b. 88d888b. 
 M  M MM  MMMMMMMM M  MMMMMMMM 88'  `88 88'  `88 88'  `88 88'  `88 88ooood8 88'  `88 
@@ -60,14 +61,18 @@ def select_mode(interface): # Muestra los modos a los que se puede cambiar la in
 
 
 def main(): # Función principal.
+
     clean_screen() # Limpiar pantalla.
     print(LOGO) # Imprime el ASCII art con el nombre del programa.
     print(INFO) # Imprime la información de GitHub.
     interface = select_interface() # Obtener la interfaz a cambiar.
+
     clean_screen() # Limpiar pantalla.
+    print(LOGO) # Imprime el ASCII art con el nombre del programa.
+    print(INFO) # Imprime la información de GitHub.
+    print(f"[i] Interfaz seleccionada: {interface}\n")
     select_mode(interface) # Ejecutar el cambio sobre la interfaz indicada.
-
-
+    
 
 if __name__ == "__main__": # Inicializador.
     main()

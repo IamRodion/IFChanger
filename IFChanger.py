@@ -1,6 +1,6 @@
 import subprocess, os, netifaces
 
-INFO = "[i] Creado por __Rodion__. (github.com/RodionButEncapsulated)\n"
+INFO = "[i] Creado por __Rodion__. (github.com/IamRodion)\n"
 
 LOGO = '''
 M""M MM""""""""`M MM'""""'YMM dP                                                    

@@ -1,6 +1,6 @@
 import subprocess, os, netifaces
 
-INFO = "[i] Creado por __Rodion__. (github.com/IamRodion)\n"
+INFO = "[i] Creado por __Rodion__ (github.com/IamRodion)\n"
 
 LOGO = '''
 M""M MM""""""""`M MM'""""'YMM dP                                                    
@@ -75,4 +75,7 @@ def main(): # Función principal.
     
 
 if __name__ == "__main__": # Inicializador.
-    main()
+	try:
+		main()
+	except KeyboardInterrupt:
+		print('\n[!] Cerrando programa')

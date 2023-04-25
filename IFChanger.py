@@ -78,4 +78,8 @@ if __name__ == "__main__": # Inicializador.
 	try:
 		main()
 	except KeyboardInterrupt:
+<<<<<<< HEAD
 		print('\n[!] Cerrando programa')
+=======
+		input('\n[!] Presione [Enter] para cerrar\n')
+>>>>>>> b390b85c592b4e306c27de748a7e1026cc29f6d1
